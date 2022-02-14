@@ -36,9 +36,9 @@ class Abstract_Data_Requestor(ABC):
 
 class Series_Data_Requestor(Abstract_Data_Requestor):
     def __init__(self, series_id):
-        super().__init__(Vars.URL + Vars.SERIES_TOKEN.format(series_id))
+        super().__init__(Vars.SERIES_URL + Vars.SERIES_TOKEN.format(series_id))
 
 
 class Catagory_Data_Requestor(Abstract_Data_Requestor):
     def __init__(self, catagory_id):
-        super().__init__(Vars.URL + Vars.CATAGORY_TOKEN.format(catagory_id))
+        super().__init__(Vars.CATAGORY_URL + Vars.CATAGORY_TOKEN.format(catagory_id))
